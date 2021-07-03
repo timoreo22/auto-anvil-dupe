@@ -1,25 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "anvil-dupe-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for the Meteor Addon API.",
+  "name": "Anvil Dupe Addon",
+  "description": "An addon to automatically do anvil dupe using Meteor",
   "authors": [
-    "seasnail8169"
+    "timoreo"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/timoreo22/auto-anvil-dupe"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/autodupe/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "meteordevelopment.addons.template.TemplateAddon"
+      "fr.timoreo.autodupe.AnvilDupeAddon"
     ]
   },
-  "mixins": [
-    "template.mixins.json"
-  ],
   "depends": {
     "java": ">=16",
     "minecraft": ">=1.17",

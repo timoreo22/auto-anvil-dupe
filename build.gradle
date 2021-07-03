@@ -1,6 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.8-SNAPSHOT'
-    id 'maven-publish'
+    id 'fabric-loom' version '0.9-SNAPSHOT'
 }
 
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_16
@@ -14,6 +13,7 @@ repositories {
         name = "jitpack"
         url = "https://jitpack.io"
     }
+    mavenCentral()
 }
 
 dependencies {
@@ -24,6 +24,8 @@ dependencies {
 
     // Meteor
     modImplementation "com.github.MeteorDevelopment:meteor-client:master-SNAPSHOT"
+
+
 }
 
 processResources {
